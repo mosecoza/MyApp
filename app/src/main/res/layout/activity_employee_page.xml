@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#C5CAE9"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.myapp.EmployeePage">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView">
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Employee Number"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_emp_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Name"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_username"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Surname"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_surname"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Email"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+           
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Date"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Job Describtion"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_description"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Sign-On Time"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_sign_on"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Sign-Off time"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_sign_off"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+
+            <TableRow android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:text="Shift-Length"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/show_length"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/accept" />
+
+        <Button
+            android:id="@+id/btn_decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="decline"
+            />
+
+        <EditText
+            android:id="@+id/show_decline_mesage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please provide a valid reason"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="send decline message"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
